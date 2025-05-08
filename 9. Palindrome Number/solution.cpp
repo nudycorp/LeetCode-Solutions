@@ -4,6 +4,7 @@ public:
         if (x < 0) return false;
 
         string str_x = to_string(x);
+        string temp_x = to_string(x);
 
         int left = 0;
         int rigth = str_x.length() - 1;
@@ -14,6 +15,6 @@ public:
             rigth--;
         }
 
-        return x == stoi(str_x);
+        return temp_x == str_x;
     }
 };
